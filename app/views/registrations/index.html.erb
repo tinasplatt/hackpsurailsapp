@@ -1,0 +1,61 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Registrations</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>First name</th>
+      <th>Last name</th>
+      <th>Email</th>
+      <th>Phone</th>
+      <th>School</th>
+      <th>Graduation year</th>
+      <th>Major</th>
+      <th>Race</th>
+      <th>Gender</th>
+      <th>Age</th>
+      <th>Diet restrictions</th>
+      <th>First hackathon</th>
+      <th>Travel reimbursement</th>
+      <th>Zipcode</th>
+      <th>Shirt style</th>
+      <th>Shirt size</th>
+      <th>Technical skills</th>
+      <th>Resume</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @registrations.each do |registration| %>
+      <tr>
+        <td><%= registration.first_name %></td>
+        <td><%= registration.last_name %></td>
+        <td><%= registration.email %></td>
+        <td><%= registration.phone %></td>
+        <td><%= registration.school %></td>
+        <td><%= registration.graduation_year %></td>
+        <td><%= registration.major %></td>
+        <td><%= registration.race %></td>
+        <td><%= registration.gender %></td>
+        <td><%= registration.age %></td>
+        <td><%= registration.diet_restrictions %></td>
+        <td><%= registration.first_hackathon %></td>
+        <td><%= registration.travel_reimbursement %></td>
+        <td><%= registration.zipcode %></td>
+        <td><%= registration.shirt_style %></td>
+        <td><%= registration.shirt_size %></td>
+        <td><%= registration.technical_skills %></td>
+        <td><%= registration.resume %></td>
+        <td><%= link_to 'Show', registration %></td>
+        <td><%= link_to 'Edit', edit_registration_path(registration) %></td>
+        <td><%= link_to 'Destroy', registration, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Registration', new_registration_path %>

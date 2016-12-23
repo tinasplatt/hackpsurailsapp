@@ -1,0 +1,2 @@
+json.extract! registration, :id, :first_name, :last_name, :email, :phone, :school, :graduation_year, :major, :race, :gender, :age, :diet_restrictions, :first_hackathon, :travel_reimbursement, :zipcode, :shirt_style, :shirt_size, :technical_skills, :resume, :created_at, :updated_at
+json.url registration_url(registration, format: :json)

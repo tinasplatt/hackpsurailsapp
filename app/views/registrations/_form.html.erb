@@ -1,0 +1,89 @@
+<%= form_for(@registration) do |f| %>
+  <% if @registration.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@registration.errors.count, "error") %> prohibited this registration from being saved:</h2>
+
+      <ul>
+      <% @registration.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :first_name %><br>
+    <%= f.text_field :first_name %>
+  </div>
+  <div class="field">
+    <%= f.label :last_name %><br>
+    <%= f.text_field :last_name %>
+  </div>
+  <div class="field">
+    <%= f.label :email %><br>
+    <%= f.text_field :email %>
+  </div>
+  <div class="field">
+    <%= f.label :phone %><br>
+    <%= f.number_field :phone %>
+  </div>
+  <div class="field">
+    <%= f.label :school %><br>
+    <%= f.text_field :school %>
+  </div>
+  <div class="field">
+    <%= f.label :graduation_year %><br>
+    <%= f.number_field :graduation_year %>
+  </div>
+  <div class="field">
+    <%= f.label :major %><br>
+    <%= f.text_field :major %>
+  </div>
+  <div class="field">
+    <%= f.label :race %><br>
+    <%= f.text_field :race %>
+  </div>
+  <div class="field">
+    <%= f.label :gender %><br>
+    <%= f.text_field :gender %>
+  </div>
+  <div class="field">
+    <%= f.label :age %><br>
+    <%= f.number_field :age %>
+  </div>
+  <div class="field">
+    <%= f.label :diet_restrictions %><br>
+    <%= f.text_field :diet_restrictions %>
+  </div>
+  <div class="field">
+    <%= f.label :first_hackathon %><br>
+    <%= f.check_box :first_hackathon %>
+  </div>
+  <div class="field">
+    <%= f.label :travel_reimbursement %><br>
+    <%= f.check_box :travel_reimbursement %>
+  </div>
+  <div class="field">
+    <%= f.label :zipcode %><br>
+    <%= f.text_field :zipcode %>
+  </div>
+  <div class="field">
+    <%= f.label :shirt_style %><br>
+    <%= f.text_field :shirt_style %>
+  </div>
+  <div class="field">
+    <%= f.label :shirt_size %><br>
+    <%= f.text_field :shirt_size %>
+  </div>
+  <div class="field">
+    <%= f.label :technical_skills %><br>
+    <%= f.text_field :technical_skills %>
+  </div>
+  <div class="field">
+    <%= f.label :resume %><br>
+    <%= f.text_field :resume %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

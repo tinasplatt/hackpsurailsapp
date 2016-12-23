@@ -1,0 +1,94 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>First name:</strong>
+  <%= @registration.first_name %>
+</p>
+
+<p>
+  <strong>Last name:</strong>
+  <%= @registration.last_name %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @registration.email %>
+</p>
+
+<p>
+  <strong>Phone:</strong>
+  <%= @registration.phone %>
+</p>
+
+<p>
+  <strong>School:</strong>
+  <%= @registration.school %>
+</p>
+
+<p>
+  <strong>Graduation year:</strong>
+  <%= @registration.graduation_year %>
+</p>
+
+<p>
+  <strong>Major:</strong>
+  <%= @registration.major %>
+</p>
+
+<p>
+  <strong>Race:</strong>
+  <%= @registration.race %>
+</p>
+
+<p>
+  <strong>Gender:</strong>
+  <%= @registration.gender %>
+</p>
+
+<p>
+  <strong>Age:</strong>
+  <%= @registration.age %>
+</p>
+
+<p>
+  <strong>Diet restrictions:</strong>
+  <%= @registration.diet_restrictions %>
+</p>
+
+<p>
+  <strong>First hackathon:</strong>
+  <%= @registration.first_hackathon %>
+</p>
+
+<p>
+  <strong>Travel reimbursement:</strong>
+  <%= @registration.travel_reimbursement %>
+</p>
+
+<p>
+  <strong>Zipcode:</strong>
+  <%= @registration.zipcode %>
+</p>
+
+<p>
+  <strong>Shirt style:</strong>
+  <%= @registration.shirt_style %>
+</p>
+
+<p>
+  <strong>Shirt size:</strong>
+  <%= @registration.shirt_size %>
+</p>
+
+<p>
+  <strong>Technical skills:</strong>
+  <%= @registration.technical_skills %>
+</p>
+
+<p>
+  <strong>Resume:</strong>
+  <%= @registration.resume %>
+</p>
+
+<%= link_to 'Edit', edit_registration_path(@registration) %> |
+<%= link_to 'Back', registrations_path %>
